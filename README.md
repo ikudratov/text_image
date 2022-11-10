@@ -24,7 +24,12 @@ def text_to_image():
         # Textni rasmga qo'shish
         # (x=20, y=25) Textni joylashish kordinatalari
         # (237, 230, 211) Text rangi
-        image_editable.text((20,25), title_text, (237, 230, 211), font=title_font)
+        image_editable.text(
+            (20,25),
+            title_text,
+            (237, 230, 211),
+            font=title_font
+        )
         # rasmni saqlash
         my_image.save(f"data_store/result{i}.jpg")
 
